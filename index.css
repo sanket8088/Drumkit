@@ -1,0 +1,41 @@
+body{
+    margin: 0;
+    background: url("https://images3.alphacoders.com/589/589870.jpg");
+    background-size: cover;
+
+}
+
+#audio-player{
+    display: none;
+}
+
+#button-container{
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 25%;
+}
+
+.button{
+    width: 60px;
+    text-align: center;
+    border: 2px solid #ccc;
+    padding: 1% 2%;
+    box-shadow: 0 2px 5px #ccc;
+    cursor: pointer;
+    border-radius: 5%;
+     transition: all 0.2s ease-in;
+}
+
+
+
+.keyId{
+        font-size: 26px;
+    font-weight: 700;
+
+}
+
+.name{
+        text-transform: uppercase;
+}
+
