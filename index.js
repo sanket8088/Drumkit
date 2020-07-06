@@ -3,7 +3,6 @@ $(document).ready(() => {
 
 
     const playMusic = (id, myUrl) => {
-        console.log(myUrl)
         $(".button").css("border", "2px solid #ccc")
         $(".button").css("transform", "scale3d(1,1,1")
         $("#" + id).css("border", "2px solid red")
@@ -20,37 +19,37 @@ $(document).ready(() => {
     }
 
     $("body").keypress(e => {
-        console.log(e.key)
-        if (e.key == "a") {
+        eValue = e.key.toLowerCase()
+        if (eValue == "a") {
             playMusic("buttonA", "clap")
         }
-        else if (e.key == "s") {
+        else if (eValue == "s") {
             playMusic("buttonS", "hihat")
         }
 
-        else if (e.key == "d") {
+        else if (eValue == "d") {
             playMusic("buttonD", "kick")
         }
 
-        else if (e.key == "f") {
+        else if (eValue == "f") {
             playMusic("buttonF", "openhat")
         }
 
-        else if (e.key == "g") {
+        else if (eValue == "g") {
             playMusic("buttonG", "boom")
         }
 
-        else if (e.key == "h") {
+        else if (eValue == "h") {
             playMusic("buttonH", "ride")
         }
 
-        else if (e.key == "j") {
+        else if (eValue == "j") {
             playMusic("buttonJ", "snare")
         }
-        else if (e.key == "k") {
+        else if (eValue == "k") {
             playMusic("buttonK", "tom")
         }
-        else if (e.key == "l") {
+        else if (eValue == "l") {
             playMusic("buttonL", "tink")
         }
     })
